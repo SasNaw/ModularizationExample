@@ -1,0 +1,9 @@
+<resources>
+    <string name="title_play">Playing: test title</string>
+    <string name="title_pause">Paused</string>
+    <string name="title_stopped">NuPlayer Test Module</string>
+
+    <string name="subtitle_play">This is a test subtitle for the playing state</string>
+    <string name="subtitle_paused">Currently the player is paused</string>
+    <string name="subtitle_stopped">This is a completely independent module</string>
+</resources>
