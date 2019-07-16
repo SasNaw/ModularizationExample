@@ -6,7 +6,7 @@ apply from: '../shared_dependencies.gradle'
 apply from: '../test_dependencies.gradle'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion versions.compileSdk
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

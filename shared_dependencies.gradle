@@ -1,7 +1,9 @@
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation "androidx.appcompat:appcompat:${versions.appCompat}"
     implementation "androidx.core:core-ktx:${versions.coreKtx}"
     implementation "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}"
     implementation "com.jakewharton.timber:timber:${versions.timber}"
+    implementation "com.google.dagger:dagger:${versions.dagger}"
 }

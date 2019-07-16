@@ -1,1 +1,1 @@
-include ':app', ':core', ':nuplayer', ':login'
+include ':app', ':core', ':nuplayer', ':login', ':feature_impl_test'

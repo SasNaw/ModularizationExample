@@ -14,6 +14,20 @@
         android:padding="16dp"
         android:text="login" />
 
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="++" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="--" />
+
     <include layout="@layout/player_view" />
 
 </LinearLayout>
