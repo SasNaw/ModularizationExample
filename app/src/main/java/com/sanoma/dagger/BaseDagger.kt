@@ -1,14 +1,13 @@
 package com.sanoma.dagger
 
 import android.content.Context
+import com.sanoma.core.Providers
 import com.sanoma.core.feature.Feature
 import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
 import dagger.Provides
 import timber.log.Timber
-
-const val PROVIDER_CLASS = "com.sanoma.feature_impl_test.FeatureImpl\$Provider"
 
 @Component(modules = [BaseModule::class])
 interface BaseComponent : Feature.Dependencies {
@@ -36,8 +35,7 @@ object BaseModule {
             return feature as Feature
         }
         return try {
-            val provider = Class.forName(PROVIDER_CLASS).kotlin.objectInstance as Feature.Provider
-            provider.get(baseComponent)
+            Providers.FEATURE_PROVIDER.get(baseComponent)
                 .also { feature = it }
         } catch (e: ClassNotFoundException) {
             Timber.e(e)
